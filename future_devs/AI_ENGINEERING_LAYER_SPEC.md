@@ -49,6 +49,8 @@ pass QA.
   **router tier-selection accuracy** (did the router pick the cheapest tier that passed?).
 - **Gate:** CI runs the eval suite; a routing change must not regress the metrics.
 - **Deliverable:** a published before/after metrics table in the README.
+- **Detailed design:** `docs/eval-harness-design.md` (metrics, golden-set schema, judge
+  calibration, router oracle, CI gate, phased build plan E0–E4).
 
 ## Child 3 — `telemetry_analysis`
 

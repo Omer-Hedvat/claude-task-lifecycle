@@ -99,6 +99,7 @@ Shipped as a **Claude Code plugin** via a git marketplace. Install (once a relea
 | `future_devs/AI_ENGINEERING_LAYER_SPEC.md` | Epic — the router + evals + telemetry (the AI-engineering core) |
 | `TOOLING_ROADMAP.md` | Tracker for all epics + children |
 | `docs/DESIGN.md` | Design notes / architecture decisions |
+| `docs/eval-harness-design.md` | Build-ready design for the eval harness (the AI-Eng core) |
 | `CLAUDE.md` | Working doc for agents operating in this repo |
 
 ## License

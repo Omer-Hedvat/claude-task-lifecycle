@@ -56,5 +56,5 @@ The portfolio centerpiece. Spec: `future_devs/AI_ENGINEERING_LAYER_SPEC.md`.
 | # | Status | Slug | What |
 |---|---|---|---|
 | 1 | `not-started` | `rightsizer_router` | Learned model-tier/effort/QA router; rules baseline (v0) → learned (v1). Deliverable: cost-vs-quality curve. |
-| 2 | `not-started` | `eval_harness` | Golden set + deterministic checks + LLM-as-judge; metrics + CI gate. Deliverable: before/after table. |
+| 2 | `not-started` | `eval_harness` | Golden set + deterministic checks + LLM-as-judge; metrics + CI gate. Deliverable: before/after table. **Design ready:** `docs/eval-harness-design.md` (phases E0–E4). |
 | 3 | `not-started` | `telemetry_analysis` | Instrument runs (opt-in); analyze which features predict QA failure. Deliverable: analysis writeup; feeds router v1. |
