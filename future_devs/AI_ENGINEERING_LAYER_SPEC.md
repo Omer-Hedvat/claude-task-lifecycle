@@ -37,6 +37,9 @@ pass QA.
   pairs from telemetry; falls back to v0 when confidence is low.
 - **Deliverable:** a **cost-vs-quality tradeoff curve** — $/task and latency per tier vs.
   QA pass-rate retained. Show that routing saves $ without losing quality.
+- **Detailed design:** `docs/rightsizer-router-design.md` (features, v0 rules baseline,
+  GBM model choice + ordinal/asymmetric loss, censored-feedback/bandit framing,
+  confidence-gated fallback, phased build plan R0–R4).
 
 ## Child 2 — `eval_harness`
 
