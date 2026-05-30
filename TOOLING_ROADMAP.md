@@ -10,7 +10,7 @@ Tracker for the two Tooling epics that build this project. Status enum:
 | Status | Phase | Name | Spec | Remaining work | Rollup |
 |---|---|---|---|---|---|
 | `not-started` | Tooling | Task Management Architecture Hardening | `TASK_MGMT_HARDENING_SPEC.md` | 8 children, none started — start with `status_off_merge_path` (A1) | 0/8 wrapped · 8 not-started |
-| `not-started` | Tooling | Publishable `claude-task-lifecycle` Plugin | `TASK_LIFECYCLE_PLUGIN_SPEC.md` | 6 children, blocked on hardening children landing first | 0/6 wrapped · 6 not-started |
+| `not-started` | Tooling | Publishable `claude-task-lifecycle` Plugin | `TASK_LIFECYCLE_PLUGIN_SPEC.md` | 7 children, blocked on hardening children landing first (skeleton scaffold can start now) | 0/7 wrapped · 7 not-started |
 
 ---
 
@@ -37,6 +37,7 @@ Depends on the hardening epic. Phasing order below.
 
 | # | Status | Slug | What |
 |---|---|---|---|
+| 0 | `not-started` | `plugin_package_skeleton` | Scaffold empty-but-valid plugin package structure (`.claude-plugin/`, `skills/`, `hooks/`, `agents/`). Precedes extraction. Spec: `future_devs/PLUGIN_PACKAGE_SKELETON_SPEC.md`. |
 | 1 | `not-started` | (hardening epic) | Core engine done right — status model, config-driven env, doctor, verbs. |
 | 2 | `not-started` | `plugin_config_schema` | Define per-project `userConfig` contract in `plugin.json`. (Parallel-safe with QA tiers.) |
 | 2 | `not-started` | `plugin_pluggable_qa_tiers` | Tier 1 generic; Tiers 2–4 project-declared. (Parallel-safe with config schema.) |
