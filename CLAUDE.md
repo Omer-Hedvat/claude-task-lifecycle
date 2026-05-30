@@ -2,13 +2,21 @@
 
 ## Current State
 
-**Project:** `claude-task-lifecycle` — a standalone, multi-project, adaptive
-task-management workflow for Claude Code, extracted from the PowerME `.claude/`
-workflow. End state: a Claude Code **plugin** served from a private git marketplace,
-consumed by multiple repos (PowerME, `personal`, `career-watch`).
+**Project:** `claude-task-lifecycle` — an **adaptive agent-orchestration layer** for AI
+coding agents: a git-native task lifecycle with a *learned model router* and
+*eval-driven QA gating*, designed to run across multiple repos (PowerME, `personal`,
+`career-watch`). Extracted from the PowerME `.claude/` workflow. End state: a Claude Code
+**plugin** served from a git marketplace.
 
-**Stage:** Incubating — repo scaffolded, no plugin code carved out yet. The hardening
-work is currently being incubated inside the PowerME repo and migrates here later.
+**Positioning:** This is a public, AI-Engineering portfolio project. The AI-legible core
+is the AI Engineering Layer epic (`future_devs/AI_ENGINEERING_LAYER_SPEC.md`): a learned
+model-tier router, an eval harness, and telemetry analysis — mapped to the 2026 hiring
+signals (model routing/cost optimization, eval design, observability). Honesty invariant:
+no metric is claimed without an eval/telemetry behind it.
+
+**Stage:** Incubating — repo scaffolded, README/design doc/roadmap framed, no plugin or
+router code carved out yet. The lifecycle workflow is proven in daily use inside the
+PowerME repo and migrates here later.
 
 **Constant across consumers:** git — worktree isolation, the lifecycle state machine
 (`file → start → QA → wrap`), status transitions, model right-sizing, and the QA

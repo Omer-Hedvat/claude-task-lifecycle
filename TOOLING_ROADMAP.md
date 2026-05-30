@@ -11,6 +11,7 @@ Tracker for the two Tooling epics that build this project. Status enum:
 |---|---|---|---|---|---|
 | `not-started` | Tooling | Task Management Architecture Hardening | `TASK_MGMT_HARDENING_SPEC.md` | 8 children, none started — start with `status_off_merge_path` (A1) | 0/8 wrapped · 8 not-started |
 | `not-started` | Tooling | Publishable `claude-task-lifecycle` Plugin | `TASK_LIFECYCLE_PLUGIN_SPEC.md` | 7 children, blocked on hardening children landing first (skeleton scaffold can start now) | 0/7 wrapped · 7 not-started |
+| `not-started` | AI Engineering | AI Engineering Layer — learned router + evals + telemetry | `future_devs/AI_ENGINEERING_LAYER_SPEC.md` | 3 children — the portfolio centerpiece; needs telemetry hook points from hardening | 0/3 wrapped · 3 not-started |
 
 ---
 
@@ -45,3 +46,15 @@ Depends on the hardening epic. Phasing order below.
 | 4 | `not-started` | `plugin_extract_skeleton` | Carve generic skills out. Needs config + QA tiers + DRY plumbing. |
 | 5 | `not-started` | `plugin_pilot_adoption` | Wire `career-watch` + `personal` via the private marketplace; prove adaptivity. |
 | 6 | `not-started` | `plugin_packaging_docs` | Package + document; standalone-repo extraction + PowerME migration (post-launch). |
+
+---
+
+## 3. AI Engineering Layer — children
+
+The portfolio centerpiece. Spec: `future_devs/AI_ENGINEERING_LAYER_SPEC.md`.
+
+| # | Status | Slug | What |
+|---|---|---|---|
+| 1 | `not-started` | `rightsizer_router` | Learned model-tier/effort/QA router; rules baseline (v0) → learned (v1). Deliverable: cost-vs-quality curve. |
+| 2 | `not-started` | `eval_harness` | Golden set + deterministic checks + LLM-as-judge; metrics + CI gate. Deliverable: before/after table. |
+| 3 | `not-started` | `telemetry_analysis` | Instrument runs (opt-in); analyze which features predict QA failure. Deliverable: analysis writeup; feeds router v1. |
